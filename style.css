@@ -55,7 +55,7 @@ body * {
 }
 
 /* switch*/
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
@@ -70,22 +70,26 @@ body * {
 
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   z-index: 1;
   transform: translateY(-50%);
-} 
+}
+.light #switch button {
+  right: 0;
+  left: initial;
+}
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px) ;
+  backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
-
+ 
 /* links*/
 ul {
   list-style: none;
